@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Филонов](https://up.htmlacademy.ru/adaptive/17/user/896721).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков](https://up.htmlacademy.ru/adaptive/17/user/191422).
 
 ---
 
