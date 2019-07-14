@@ -5,7 +5,7 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header сlass="page-header">
+    <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/191x39" alt="Cat Energy">
       </a>
@@ -33,103 +33,104 @@
           программу питания для вашего кота
         </p>
         <form action="https://echo.htmlacademy.ru" method="get" class="form">
-          <div class="main-info">
-            <ul class="main-info__list list-info-cat">
-              <li class="list-info-cat__item">
-                <label class="list-info-cat__label">Имя:<sup>*</sup>
-                  <input class="list-info-cat__input" type="text" name="name-cat" placeholder="Барсик" required>
+          <fieldset class="main-info">
+            <ul class="main-info__list list-info">
+              <li class="list-info__item">
+                <label class="list-info__label">Имя:<sup>*</sup>
+                  <input class="list-info__input" type="text" name="name-cat" placeholder="Барсик" required>
                 </label>
               </li>
-              <li class="list-info-cat__item">
-                <label class="list-info-cat__label">Вес (кг):<sup>*</sup>
-                  <input class="list-info-cat__input" type="text" name="weight-cat" placeholder="7" required>
+              <li class="list-info__item">
+                <label class="list-info__label">Вес (кг):<sup>*</sup>
+                  <input class="list-info__input" type="text" name="weight-cat" placeholder="7" required>
                 </label>
               </li>
-              <li class="list-info-cat__item">
-                <label class="list-info-cat__label">Возраст (лет):
-                  <input class="list-info-cat__input" type="text" name="age-cat" placeholder="7">
-                </label>
-              </li>
-            </ul>
-          </div>
-          <div class="info-programm">
-            <h3 class="visually-hidden">Выбор программы питания</h3>
-            <ul class="info-programm__list programm-list">
-              <li class="programm-list__item">
-                <label class="programm-list__login-radio">
-                  <input type="radio" name="programm" class="visually-hidden programm-list__radio-button" checked>
-                  <span class="programm-list__radio-indicator"></span>
-                  <span class="programm-list__type-programm">Похудение</span>
-                </label>
-              </li>
-              <li class="programm-list__item">
-                <label class="programm-list__login-radio">
-                  <input type="radio" name="programm" class="visually-hidden programm-list__radio-button">
-                  <span class="programm-list__radio-indicator"></span>
-                  <span class="programm-list__type-programm">Набор массы</span>
-                </label>
-              </li>
-              <li class="programm-list__item">
-                <label class="programm-list__login-radio">
-                  <input type="radio" name="programm" class="visually-hidden programm-list__radio-button">
-                  <span class="programm-list__radio-indicator"></span>
-                  <span class="programm-list__type-programm">Не знаю (Нужен ваш совет)</span>
+              <li class="list-info__item">
+                <label class="list-info__label">Возраст (лет):
+                  <input class="list-info__input" type="text" name="age-cat" placeholder="7">
                 </label>
               </li>
             </ul>
-          </div>
-          <div class="contact">
-            <h3 class="contact__title">Контактные данные (владельца кота)</h3>
-            <ul class="contact__list list-info-contact">
-              <li class="list-info-contact__item">
-                <label class="list-info-contact__label">E-mail:<sup>*</sup>
-                  <input class="list-info-contact__input list-info-contact__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          </fieldset>
+          <fieldset class="info-programm">
+            <legend class="visually-hidden">Выбор программы питания</legend>
+            <ul class="info-programm__list list-info">
+              <li class="list-info__item">
+                <label class="list-info__login-radio">
+                  <input type="radio" name="programm" class="visually-hidden list-info__radio-button" checked>
+                  <span class="list-info__radio-indicator"></span>
+                  <span class="list-info__type-programm">Похудение</span>
                 </label>
               </li>
-              <li class="list-info-contact__item">
-                <label class="list-info-contact__label">Телефон:<sup>*</sup>
-                  <input class="list-info-contact__input list-info-contact__input--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
+              <li class="list-info__item">
+                <label class="list-info__login-radio">
+                  <input type="radio" name="programm" class="visually-hidden list-info__radio-button">
+                  <span class="list-info__radio-indicator"></span>
+                  <span class="list-info__type-programm">Набор массы</span>
+                </label>
+              </li>
+              <li class="list-info__item">
+                <label class="list-info__login-radio">
+                  <input type="radio" name="programm" class="visually-hidden list-info__radio-button">
+                  <span class="list-info__radio-indicator"></span>
+                  <span class="list-info__type-programm">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
-          </div>
-          <div class="comment">
-            <h3 class="comment__title">Комментарий</h3>
+          </fieldset>
+          <fieldset class="contact">
+            <legend class="contact__title">Контактные данные (владельца кота)</legend>
+            <ul class="contact__list list-info">
+              <li class="list-info__item list-info__item--emai">
+                <label class="list-info__label">E-mail:<sup>*</sup>
+                  <input class="list-info__input list-info__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                </label>
+              </li>
+              <li class="list-info__item list-info__item--phone">
+                <label class="list-info__label">Телефон:<sup>*</sup>
+                  <input class="list-info__input list-info__input--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="comment">
+            <legend class="comment__title">Комментарий</legend>
             <textarea class="comment__description" name="comment">Расскажите обо всех повадках кота</textarea>
-          </div>
-          <div class="additional">
-            <ul class="additional__list list-additional">
-              <li class="list-additional__item">
-                <label class="list-additional__login-checkbox">
-                  <input type="checkbox" name="additional-item" class="visually-hidden list-additional__checkbox-button" checked>
-                  <span class="list-additional__checkbox-indicator"></span>
-                  <span class="list-additional__additional-item">Сахарозаменитель</span>
+          </fieldset>
+          <fieldset class="additional">
+            <legend class="additional__title">Дополнительно</legend>
+            <ul class="additional__list list-info">
+              <li class="list-info__item">
+                <label class="list-info__login-checkbox">
+                  <input type="checkbox" name="additional-item" class="visually-hidden list-info__checkbox-button" checked>
+                  <span class="list-info__checkbox-indicator"></span>
+                  <span class="list-info__additional-item">Сахарозаменитель</span>
                 </label>
               </li>
-              <li class="list-additional__item">
-                <label class="list-additional__login-checkbox">
-                  <input type="checkbox" name="additional-item" class="visually-hidden list-additional__checkbox-button">
-                  <span class="list-additional__checkbox-indicator"></span>
-                  <span class="list-additional__additional-item">Питьевая вода</span>
+              <li class="list-info__item">
+                <label class="list-info__login-checkbox">
+                  <input type="checkbox" name="additional-item" class="visually-hidden list-info__checkbox-button">
+                  <span class="list-info__checkbox-indicator"></span>
+                  <span class="list-info__additional-item">Питьевая вода</span>
                 </label>
               </li>
-              <li class="list-additional__item">
-                <label class="list-additional__login-checkbox">
-                  <input type="checkbox" name="additional-item" class="visually-hidden list-additional__checkbox-button">
-                  <span class="list-additional__checkbox-indicator"></span>
-                  <span class="list-additional__additional-item">Молоко</span>
+              <li class="list-info__item">
+                <label class="list-info__login-checkbox">
+                  <input type="checkbox" name="additional-item" class="visually-hidden list-info__checkbox-button">
+                  <span class="list-info__checkbox-indicator"></span>
+                  <span class="list-info__additional-item">Молоко</span>
                 </label>
               </li>
-              <li class="list-additional__item">
-                <label class="list-additional__login-checkbox">
-                  <input type="checkbox" name="additional-item" class="visually-hidden list-additional__checkbox-button">
-                  <span class="list-additional__checkbox-indicator"></span>
-                  <span class="list-additional__additional-item">Витамины</span>
+              <li class="list-info__item">
+                <label class="list-info__login-checkbox">
+                  <input type="checkbox" name="additional-item" class="visually-hidden list-info__checkbox-button">
+                  <span class="list-info__checkbox-indicator"></span>
+                  <span class="list-info__additional-item">Витамины</span>
                 </label>
               </li>
             </ul>
-          </div>
-          <button class="form__button to-order" type="submit">Отправить заявку</button>
+          </fieldset>
+          <button class="form__button button" type="submit">Отправить заявку</button>
         </form>
         <small class="selection-program__legend selection-program__legend--bottom">
           <sup>*</sup> — Обязательные поля
@@ -137,45 +138,44 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="information-about-us">
-        <div class="information-about-us__cooperation page-cooperation">
-          <!-- Здесь лучше как сделать тегом h3 или тегом p? блок: "cooperation__title" -->
-          <p class="page-cooperation__title">
+      <section class="about-us">
+        <div class="about-us__cooperation page-cooperation">
+          <h2 class="page-cooperation__title">
             приглашаем
             к сотрудничеству
             дилеров!
-          </p>
+          </h2>
           <address class="page-cooperation__address">
             ул. Большая Конюшенная, д. 19/8
             Санкт-Петербург
           </address>
         </div>
-        <div class="information-about-us__map page-map">
+        <div class="about-us__map page-map">
           <img class="page-map__page-map" src="http://placehold.it/320x400" alt="Как до нас добраться">
         </div>
-        <footer class="footer-page">
-          <a class="footer-page__logo" href="index.html">
-            <img class="footer-page__logo-image" src="http://placehold.it/128x24" alt="Cat Energy">
+      </section>
+      <section class="footer-down">
+        <a class="footer-down__logo">
+          <img class="footer-down__logo-image" src="http://placehold.it/128x24" alt="Cat Energy">
+        </a>
+        <ul class="footer-down__list social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+        <div class="footer-down__development development-site">
+          <h2 class="visually-hidden">Разработанно</h2>
+          <a class="development-site__item" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="development-site__item-text">HTML Academy</span>
+            <img class="development-site__item-image" scr="http://placehold.it/27x34" alt="HTML Academy">
           </a>
-          <ul class="footer-page__list social">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-          </ul>
-          <div class="footer-page__development development-site">
-            <h2 class="visually-hidden">Разработанно</h2>
-            <a class="development-site__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <a class="development-site__item-logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="development-site__item-logo-image" scr="http://placehold.it/27x34" alt="HTML Academy">
-            </a>
-          </div>
-        </footer>
+        </div>
       </section>
     </footer>
   </body>
