@@ -1,13 +1,19 @@
 .site-list {
-  list-style: none;
   padding: 0;
   margin: 0;
+
+  list-style: none;
 }
 
 .site-list__item a {
-  font-family: "Oswald-medium";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: @text-size--medium;
   line-height: @text-height--medium;
   text-transform: uppercase;
+  font-weight: 500;
   color: @color-main-text;
+}
+
+.site-list__item {
+  border-bottom: 1px #f2f2f2 solid;
 }
