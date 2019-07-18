@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
@@ -34,7 +35,7 @@
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г">
             </a>
             <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__title">Cat Energy PRO 500 г</h3>
+              <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
             </a>
             <table class="catalog__info">
               <tr>
@@ -57,7 +58,7 @@
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy PRO 1000 г">
             </a>
             <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__title">Cat Energy PRO 1000 г</h3>
+              <h3 class="catalog__item-title">Cat Energy PRO 1000 г</h3>
             </a>
             <table class="catalog__info">
               <tr>
@@ -80,7 +81,7 @@
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г">
             </a>
             <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__title">Cat Energy PRO 500 г</h3>
+              <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
             </a>
             <table class="catalog__info">
               <tr>
@@ -103,7 +104,7 @@
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy PRO 1000 г">
             </a>
             <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__title">Cat Energy PRO 1000 г</h3>
+              <h3 class="catalog__item-title">Cat Energy PRO 1000 г</h3>
             </a>
             <table class="catalog__info">
               <tr>
@@ -126,7 +127,7 @@
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy Slim 500 г">
             </a>
             <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__title">Cat Energy Slim 500 г</h3>
+              <h3 class="catalog__item-title">Cat Energy Slim 500 г</h3>
             </a>
             <table class="catalog__info">
               <tr>
@@ -149,7 +150,7 @@
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy Slim 1000 г">
             </a>
             <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__title">Cat Energy Slim 1000 г</h3>
+              <h3 class="catalog__item-title">Cat Energy Slim 1000 г</h3>
             </a>
             <table class="catalog__info">
               <tr>
@@ -172,7 +173,7 @@
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy Slim 500 г">
             </a>
             <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__title">Cat Energy Slim 500 г</h3>
+              <h3 class="catalog__item-title">Cat Energy Slim 500 г</h3>
             </a>
             <table class="catalog__info">
               <tr>
@@ -191,9 +192,9 @@
             <a class="catalog__order button" href="checkout.html">Заказать</a>
           </li>
           <li class="catalog__item catalog__item--show">
-            <h3 class="catalog__title">Показать еще 100500 товаров</h3>
+            <h3 class="catalog__item-title">Показать еще 100500 товаров</h3>
             <p class="catalog__info">На самом деле вкусов гораздо больше!</p>
-            <button class="catalog__to-all button">Показать все</button>
+            <button class="catalog__to-all button--to-all">Показать все</button>
           </li>
         </ul>
       </section>
@@ -252,7 +253,7 @@
     </main>
     <footer class="page-footer">
       <section class="about-us">
-        <div class="about-us__cooperation page-cooperation">
+        <div class="about-us__cooperation page-cooperation--bg">
           <h2 class="page-cooperation__title">
             приглашаем
             к сотрудничеству
@@ -273,20 +274,20 @@
         </a>
         <ul class="footer-down__list social">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
           </li>
         </ul>
         <div class="footer-down__development development-site">
-          <h2 class="visually-hidden">Разработанно</h2>
+          <h2 class="visually-hidden">Разработанно:</h2>
           <a class="development-site__item" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="development-site__item-text">HTML Academy</span>
-            <img class="development-site__item-image" scr="http://placehold.it/27x34" alt="HTML Academy">
+            <img class="development-site__item-image" src="http://placehold.it/27x34" alt="HTML Academy">
           </a>
         </div>
       </section>

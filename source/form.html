@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
@@ -36,17 +37,20 @@
           <fieldset class="main-info">
             <ul class="main-info__list list-info">
               <li class="list-info__item">
-                <label class="list-info__label">Имя:<sup>*</sup>
+                <label class="list-info__label">
+                  <span class="list-info__text">Имя:<sup>*</sup></span>
                   <input class="list-info__input" type="text" name="name-cat" placeholder="Барсик" required>
                 </label>
               </li>
               <li class="list-info__item">
-                <label class="list-info__label">Вес (кг):<sup>*</sup>
+                <label class="list-info__label">
+                  <span class="list-info__text">Вес (кг):<sup>*</sup></span>
                   <input class="list-info__input" type="text" name="weight-cat" placeholder="7" required>
                 </label>
               </li>
               <li class="list-info__item">
-                <label class="list-info__label">Возраст (лет):
+                <label class="list-info__label">
+                  <span class="list-info__text">Возраст (лет):</span>
                   <input class="list-info__input" type="text" name="age-cat" placeholder="7">
                 </label>
               </li>
@@ -82,12 +86,14 @@
             <legend class="contact__title">Контактные данные (владельца кота)</legend>
             <ul class="contact__list list-info">
               <li class="list-info__item list-info__item--emai">
-                <label class="list-info__label">E-mail:<sup>*</sup>
+                <label class="list-info__label">
+                  <span class="list-info__text">E-mail:<sup>*</sup></span>
                   <input class="list-info__input list-info__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                 </label>
               </li>
               <li class="list-info__item list-info__item--phone">
-                <label class="list-info__label">Телефон:<sup>*</sup>
+                <label class="list-info__label">
+                  <span class="list-info__text">Телефон:<sup>*</sup></span>
                   <input class="list-info__input list-info__input--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
                 </label>
               </li>
@@ -95,7 +101,7 @@
           </fieldset>
           <fieldset class="comment">
             <legend class="comment__title">Комментарий</legend>
-            <textarea class="comment__description" name="comment">Расскажите обо всех повадках кота</textarea>
+            <textarea class="comment__description" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="additional">
             <legend class="additional__title">Дополнительно</legend>
@@ -139,7 +145,7 @@
     </main>
     <footer class="page-footer">
       <section class="about-us">
-        <div class="about-us__cooperation page-cooperation">
+        <div class="about-us__cooperation page-cooperation--bg">
           <h2 class="page-cooperation__title">
             приглашаем
             к сотрудничеству
@@ -170,10 +176,10 @@
           </li>
         </ul>
         <div class="footer-down__development development-site">
-          <h2 class="visually-hidden">Разработанно</h2>
+          <h2 class="visually-hidden">Разработанно:</h2>
           <a class="development-site__item" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="development-site__item-text">HTML Academy</span>
-            <img class="development-site__item-image" scr="http://placehold.it/27x34" alt="HTML Academy">
+            <img class="development-site__item-image" src="http://placehold.it/27x34" alt="HTML Academy">
           </a>
         </div>
       </section>
