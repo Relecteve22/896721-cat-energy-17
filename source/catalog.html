@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--gray">
       <div class="page-header__container">
         <div class="page-header__wrappers">
           <a class="page-header__logo" href="index.html">
@@ -14,7 +15,7 @@
           </a>
           <button class="page-header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
-        <nav class="main-nav">
+        <!-- <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item-active">
               <a href="index.html">Главная</a>
@@ -26,7 +27,7 @@
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </nav>
+        </nav> -->
       </div>
     </header>
     <main class="page-main">
@@ -38,165 +39,182 @@
             <a class="catalog__link-image" href="item.html">
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г">
             </a>
-            <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
-            </a>
-            <table class="catalog__info">
-              <tr>
-                <td class="catalog__value">Объем</td>
-                <td class="catalog__field">500 г</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Вкус</td>
-                <td class="catalog__field">Курица</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Цена</td>
-                <td class="catalog__field">700 Р.</td>
-              </tr>
-            </table>
+            <div class="catalog__wrapper">
+              <a class="catalog__link-title" href="item.html">
+                <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
+              </a>
+              <table class="catalog__info">
+                <tr>
+                  <td class="catalog__value">Объем</td>
+                  <td class="catalog__field">500 г</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Вкус</td>
+                  <td class="catalog__field">Курица</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Цена</td>
+                  <td class="catalog__field">700 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="catalog__order button" href="checkout.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <a class="catalog__link-image" href="item.html">
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy PRO 1000 г">
             </a>
-            <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__item-title">Cat Energy PRO 1000 г</h3>
-            </a>
-            <table class="catalog__info">
-              <tr>
-                <td class="catalog__value">Объем</td>
-                <td class="catalog__field">1000 г</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Вкус</td>
-                <td class="catalog__field">Курица</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Цена</td>
-                <td class="catalog__field">1000 Р.</td>
-              </tr>
-            </table>
+            <div class="catalog__wrapper">
+              <a class="catalog__link-title" href="item.html">
+                <h3 class="catalog__item-title">Cat Energy PRO 1000 г</h3>
+              </a>
+              <table class="catalog__info">
+                <tr>
+                  <td class="catalog__value">Объем</td>
+                  <td class="catalog__field">1000 г</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Вкус</td>
+                  <td class="catalog__field">Курица</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Цена</td>
+                  <td class="catalog__field">1000 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="catalog__order button" href="checkout.html">Заказать</a>
           </li>
+
+
+
           <li class="catalog__item">
             <a class="catalog__link-image" href="item.html">
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy PRO 500 г">
             </a>
-            <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
-            </a>
-            <table class="catalog__info">
-              <tr>
-                <td class="catalog__value">Объем</td>
-                <td class="catalog__field">500 г</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Вкус</td>
-                <td class="catalog__field">Рыба</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Цена</td>
-                <td class="catalog__field">700 Р.</td>
-              </tr>
-            </table>
+            <div class="catalog__wrapper">
+              <a class="catalog__link-title" href="item.html">
+                <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
+              </a>
+              <table class="catalog__info">
+                <tr>
+                  <td class="catalog__value">Объем</td>
+                  <td class="catalog__field">500 г</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Вкус</td>
+                  <td class="catalog__field">Рыба</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Цена</td>
+                  <td class="catalog__field">700 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="catalog__order button" href="checkout.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <a class="catalog__link-image" href="item.html">
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy PRO 1000 г">
             </a>
-            <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__item-title">Cat Energy PRO 1000 г</h3>
-            </a>
-            <table class="catalog__info">
-              <tr>
-                <td class="catalog__value">Объем</td>
-                <td class="catalog__field">1000 г</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Вкус</td>
-                <td class="catalog__field">Рыба</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Цена</td>
-                <td class="catalog__field">1000 Р.</td>
-              </tr>
-            </table>
+            <div class="catalog__wrapper">
+              <a class="catalog__link-title" href="item.html">
+                <h3 class="catalog__item-title">Cat Energy PRO 1000 г</h3>
+              </a>
+              <table class="catalog__info">
+                <tr>
+                  <td class="catalog__value">Объем</td>
+                  <td class="catalog__field">1000 г</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Вкус</td>
+                  <td class="catalog__field">Рыба</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Цена</td>
+                  <td class="catalog__field">1000 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="catalog__order button" href="checkout.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <a class="catalog__link-image" href="item.html">
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy Slim 500 г">
             </a>
-            <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__item-title">Cat Energy Slim 500 г</h3>
-            </a>
-            <table class="catalog__info">
-              <tr>
-                <td class="catalog__value">Объем</td>
-                <td class="catalog__field">500 г</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Вкус</td>
-                <td class="catalog__field">Гречка</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Цена</td>
-                <td class="catalog__field">400 Р.</td>
-              </tr>
-            </table>
+            <div class="catalog__wrapper">
+              <a class="catalog__link-title" href="item.html">
+                <h3 class="catalog__item-title">Cat Energy Slim 500 г</h3>
+              </a>
+              <table class="catalog__info">
+                <tr>
+                  <td class="catalog__value">Объем</td>
+                  <td class="catalog__field">500 г</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Вкус</td>
+                  <td class="catalog__field">Гречка</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Цена</td>
+                  <td class="catalog__field">400 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="catalog__order button" href="checkout.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <a class="catalog__link-image" href="item.html">
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy Slim 1000 г">
             </a>
-            <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__item-title">Cat Energy Slim 1000 г</h3>
-            </a>
-            <table class="catalog__info">
-              <tr>
-                <td class="catalog__value">Объем</td>
-                <td class="catalog__field">1000 г</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Вкус</td>
-                <td class="catalog__field">Гречка</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Цена</td>
-                <td class="catalog__field">700 Р.</td>
-              </tr>
-            </table>
+            <div class="catalog__wrapper">
+              <a class="catalog__link-title" href="item.html">
+                <h3 class="catalog__item-title">Cat Energy Slim 1000 г</h3>
+              </a>
+              <table class="catalog__info">
+                <tr>
+                  <td class="catalog__value">Объем</td>
+                  <td class="catalog__field">1000 г</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Вкус</td>
+                  <td class="catalog__field">Гречка</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Цена</td>
+                  <td class="catalog__field">700 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="catalog__order button" href="checkout.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <a class="catalog__link-image" href="item.html">
               <img class="catalog-image" src="http://placehold.it/140x144" alt="Cat Energy Slim 500 г">
             </a>
-            <a class="catalog__link-title" href="item.html">
-              <h3 class="catalog__item-title">Cat Energy Slim 500 г</h3>
-            </a>
-            <table class="catalog__info">
-              <tr>
-                <td class="catalog__value">Объем</td>
-                <td class="catalog__field">500 г</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Вкус</td>
-                <td class="catalog__field">Рис</td>
-              </tr>
-              <tr>
-                <td class="catalog__value">Цена</td>
-                <td class="catalog__field">500 Р.</td>
-              </tr>
-            </table>
+            <div class="catalog__wrapper">
+              <a class="catalog__link-title" href="item.html">
+                <h3 class="catalog__item-title">Cat Energy Slim 500 г</h3>
+              </a>
+              <table class="catalog__info">
+                <tr>
+                  <td class="catalog__value">Объем</td>
+                  <td class="catalog__field">500 г</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Вкус</td>
+                  <td class="catalog__field">Рис</td>
+                </tr>
+                <tr>
+                  <td class="catalog__value">Цена</td>
+                  <td class="catalog__field">500 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="catalog__order button" href="checkout.html">Заказать</a>
           </li>
           <li class="catalog__item catalog__item--show">
-            <h3 class="catalog__item-title">Показать еще 100500 товаров</h3>
+            <h3 class="catalog__item-title catalog__item-title--show">Показать еще 100500 товаров</h3>
             <p class="catalog__info">На самом деле вкусов гораздо больше!</p>
             <button class="catalog__to-all button--to-all">Показать все</button>
           </li>
