@@ -1,6 +1,11 @@
 .instruction-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 300px;
   padding: 0;
   margin: 0;
+  margin-top: 26px;
 
   list-style: none;
 }
@@ -10,4 +15,25 @@
 
   font-family: "Arial", sans-serif;
   color: @color-description;
+}
+
+@media (min-width: @tablet-width) {
+  .instruction-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 603px;
+    margin-top: 72px;
+  }
+
+  .instruction-list__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instruction-list {
+    min-height: 230px;
+    margin-top: 72px;
+  }
 }

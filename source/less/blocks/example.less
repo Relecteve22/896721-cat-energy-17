@@ -1,9 +1,30 @@
 .example {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
   background-color: @color-block--gray;
+}
+
+.example__container {
+  display: flex;
+  flex-direction: column;
+
+  width: 280px;
+  margin: 0 auto;
+}
+
+.example__wrappers--description {
+  min-height: 385px;
+}
+
+.example__wrappers--conclusion {
+  min-height: 320px;
 }
 
 .example__title {
   margin: 0;
+  margin-top: 19px;
 
   font-size: @text-size--big;
   line-height: @text-height--very-big;
@@ -12,6 +33,7 @@
 
 .example__description {
   margin: 0;
+  margin-top: 24px;
 
   font-family: "Arial", sans-serif;
   color: @color-description;
@@ -38,4 +60,51 @@
   font-size: @text-size--small;
   line-height: @text-height--medium;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: transparent;
+  }
+
+  .example__container {
+    width: 708px;
+  }
+
+  .example__title {
+    margin: 0;
+
+    font-size: @text-size--very-big;
+    line-height: @text-height--very-big;
+  }
+
+  .example__wrappers--description {
+    min-height: 577px;
+  }
+
+  .example__wrappers--conclusion {
+    min-height: 462px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  .example__title {
+    margin-top: -135px;
+    margin-bottom: 148px;
+  }
+
+  .example__wrappers--description {
+    width: 500px;
+    min-height: 462px;
+  }
+
+  .example__wrappers--conclusion {
+    width: 610px;
+  }
 }

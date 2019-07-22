@@ -1,5 +1,7 @@
 .instruction-use {
-  margin-bottom: 42px;
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 43px;
 }
 
 .instruction-use__title {
@@ -8,4 +10,30 @@
   font-size: @text-size--big;
   line-height: @text-height--very-big;
   font-weight: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .instruction-use {
+    width: 708px;
+  }
+
+  .instruction-use__title {
+    padding-top: 28px;
+
+    font-size: @text-size--very-big;
+    line-height: @text-height--very-big;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instruction-use {
+    width: 1220px;
+    min-height: 616px;
+    padding: 0;
+    margin-bottom: 33px;
+  }
+
+  .instruction-use__title {
+    padding-top: 72px;
+  }
 }

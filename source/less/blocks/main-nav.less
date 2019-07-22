@@ -1,0 +1,27 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  margin: 0 auto;
+
+  // временно для сетки
+  min-height: 195px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    width: 480px;
+    min-height: 44px;
+    margin: 0;
+
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 530px;
+  }
+}

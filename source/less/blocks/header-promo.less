@@ -1,28 +1,118 @@
 .header-promo {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 22px;
-}
-
-.header-promo__header {
-  background-color: @color-main;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  padding-top: 28px;
 }
 
 .header-promo__title {
   margin: 0;
+  padding-left: 16px;
 
   font-size: @text-size--big;
-  line-height: @text-height--very-big;
+  line-height: @text-height--big;
   color: #ffffff;
-  font-weight: normal;
+  font-weight: 400;
+  text-indent: 9px;
 }
 
 .header-promo__slogan {
+  padding-left: 40px;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 28px;
+
   font-size: @text-size--small;
   line-height: 14px;
   color: #ffffff;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
+}
 
-  margin: 0;
+.header-promo__item-img {
+  width: 280px;
+  height: 270px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .header-promo {
+    width: 709px;
+    margin: 0 auto;
+    padding-top: 57px;
+  }
+
+  .header-promo__title {
+    width: 420px;
+    padding: 0;
+    margin-left: 88px;
+
+    font-size: @text-size--very-big;
+    line-height: @text-height--very-big;
+    color: @color-main-text;
+    text-indent: 0;
+  }
+
+  .header-promo__slogan {
+    padding-left: 89px;
+    margin-top: 41px;
+    margin-bottom: 20px;
+
+    font-size: @text-size--medium;
+    line-height: @text-height--medium;
+    color: @color-main-text;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .header-promo__item-img {
+    width: 709px;
+    height: 609px;
+    margin-bottom: 0;
+  }
+
+  .header-promo__pick-program {
+    margin-left: 90px;
+    margin-top: -581px;
+    margin-bottom: 529px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-promo {
+    position: relative;
+
+    width: 1220px;
+    min-height: 560px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .header-promo__title {
+    margin-top: 110px;
+    margin-left: 80px;
+  }
+
+  .header-promo__slogan {
+    margin-top: 40px;
+    padding-left: 81px;
+  }
+
+  .header-promo__pick-program {
+    margin-left: 81px;
+    margin-top: 34px;
+    margin-bottom: 0;
+  }
+
+  .header-promo__item-img {
+    content: "";
+
+    position: absolute;
+    right: 218px;
+
+    width: 552px;
+    height: 499px;
+  }
 }

@@ -1,8 +1,18 @@
 .services {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  min-height: 552px;
+  margin: 0 auto;
+
+  margin-bottom: 17px;
 }
 
 .services__item {
+  width: 280px;
+  min-height: 266px;
+
   background-color: @color-block--gray;
 }
 
@@ -26,4 +36,30 @@
   font-size: 16px;
   line-height: 16px;
   color: @color-main-text;
+}
+
+@media (min-width: @tablet-width) {
+  .services {
+    width: 708px;
+    min-height: 774px;
+  }
+
+  .services__item {
+    width: 708px;
+    min-height: 372px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .services {
+    flex-direction: row;
+    width: 1220px;
+    min-height: 372px;
+    margin-bottom: 0;
+    padding-top: 105px;
+  }
+
+  .services__item {
+    width: 570px;
+  }
 }
