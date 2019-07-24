@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+
+  padding: 0 @mobile-padding;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    height: 305px;
+    width: 100%;
+
+    background-color: #65a93c;
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    padding: 0 @tablet-padding;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    padding: 0 @desktop-padding;
+
+    &::after {
+      display: block;
+    }
+  }
+}

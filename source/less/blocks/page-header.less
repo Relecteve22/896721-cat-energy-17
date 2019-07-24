@@ -1,3 +1,4 @@
+
 .page-header__container {
   display: flex;
   flex-direction: column;
@@ -13,19 +14,19 @@
   margin: 0 auto;
 }
 
-.page-header__logo {
-  width: 221px;
+.page-header__logo-image {
+  width: 191px;
   height: 39px;
 }
 
 .page-header__toogle {
-  margin-top: 10px;
   width: 25px;
   height: 20px;
-}
+  padding: 0;
+  margin-top: 10px;
 
-.page-header--gray {
-  border-bottom: 1px solid #ededed;
+  border: none;
+  background-color: transparent;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,7 +42,7 @@
     padding: 0;
   }
 
-  .page-header__logo {
+  .page-header__logo-image {
     width: 174px;
     height: 59px;
   }
@@ -62,7 +63,7 @@
     padding-top: 53px;
   }
 
-  .page-header__logo {
+  .page-header__logo-image {
     width: 203px;
   }
 }

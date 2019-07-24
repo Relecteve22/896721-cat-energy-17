@@ -9,9 +9,8 @@
 .example__container {
   display: flex;
   flex-direction: column;
-
-  width: 280px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 @mobile-padding;
 }
 
 .example__wrappers--description {
@@ -24,7 +23,7 @@
 
 .example__title {
   margin: 0;
-  margin-top: 19px;
+  margin-top: 18px;
 
   font-size: @text-size--big;
   line-height: @text-height--very-big;
@@ -34,26 +33,10 @@
 .example__description {
   margin: 0;
   margin-top: 24px;
+  margin-bottom: 27px;
 
   font-family: "Arial", sans-serif;
   color: @color-description;
-}
-
-.example__result {
-  padding: 0;
-
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
-}
-
-.example__objective {
-  padding: 0;
-
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
-  text-transform: uppercase;
 }
 
 .example__price {
