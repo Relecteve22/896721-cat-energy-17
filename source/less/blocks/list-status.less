@@ -10,9 +10,19 @@
 .list-status__wrappers {
   display: flex;
   flex-direction: column;
+  margin-top: 14px;
+  margin-bottom: -10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  background-color: @color-block--gray;
 }
 
 .list-status__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
   width: 125px;
 
   border: 1px solid #d9d9d9;
@@ -27,6 +37,8 @@
 }
 
 .list-status__objective {
+  padding-top: 9px;
+
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;

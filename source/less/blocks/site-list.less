@@ -21,6 +21,16 @@
   color: @color-main-text;
 }
 
+.site-list a[href] {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
 .site-list__item {
   text-align: center;
 
@@ -37,10 +47,18 @@
 
     border: none;
   }
+
+  .site-list__item-active {
+    border-bottom: 2px #68b738 solid;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .site-list {
     width: 530px;
+  }
+
+  .site-list__item-active {
+    border-bottom-color: #ffffff;
   }
 }

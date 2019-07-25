@@ -31,6 +31,7 @@
 }
 
 .example__description {
+  width: 95%;
   margin: 0;
   margin-top: 24px;
   margin-bottom: 27px;
@@ -40,9 +41,17 @@
 }
 
 .example__price {
+  display: block;
+  padding-left: 47px;
+  margin-top: 27px;
+
   font-size: @text-size--small;
   line-height: @text-height--medium;
   text-transform: uppercase;
+}
+
+.example__example-cat--thin {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
