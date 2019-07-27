@@ -41,15 +41,27 @@
 @media (min-width: @tablet-width) {
   .site-list {
     flex-direction: row;
-    width: 480px;
+    justify-content: space-between;
+    width: 440px;
     min-height: 44px;
     margin: 0;
-
-    border: none;
   }
 
-  .site-list__item-active {
-    border-bottom: 2px #68b738 solid;
+  .site-list__item {
+    border: none;
+
+    &-active {
+      border-bottom: 2px #68b738 solid;
+    }
+  }
+
+  .site-list__item a {
+    padding: 17px 0;
+
+    font-size: 18px;
+    line-height: 25px;
+    color: #222222;
+    font-weight: 400;
   }
 }
 

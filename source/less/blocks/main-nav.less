@@ -16,6 +16,10 @@
   background-color: transparent;
 }
 
+.main-nav__toogle:focus {
+  outline: none;
+}
+
 .main-nav--closed .main-nav__toogle::before {
   content: "";
 
@@ -65,11 +69,8 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     flex-direction: row;
-    width: 480px;
-    min-height: 44px;
+    width: 100%;
     margin: 0;
-
-    border: none;
   }
 
   .main-nav__toogle {

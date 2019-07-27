@@ -10,15 +10,23 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 @mobile-padding;
 }
 
 .example__wrappers--description {
+  display: flex;
+  flex-direction: column;
   min-height: 385px;
+  padding: 0 @mobile-padding;
 }
 
 .example__wrappers--conclusion {
+  display: flex;
+  flex-direction: column;
   min-height: 320px;
+}
+
+.example__example-cat {
+  margin: 0 auto;
 }
 
 .example__title {
@@ -42,8 +50,9 @@
 
 .example__price {
   display: block;
-  padding-left: 47px;
-  margin-top: 27px;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 41px;
 
   font-size: @text-size--small;
   line-height: @text-height--medium;
