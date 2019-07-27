@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 552px;
+  padding: 0 @mobile-padding;
 
   margin-bottom: 17px;
 }
@@ -109,9 +110,12 @@
 @media (min-width: @tablet-width) {
   .services {
     min-height: 774px;
+    padding: 0 @tablet-padding;
   }
 
   .services__item {
+    display: flex;
+    flex-direction: column;
     min-height: 372px;
     padding: 50px;
 
@@ -163,13 +167,14 @@
 
   .services__link {
     padding-left: 2px;
-    margin-top: 34px;
+    margin-bottom: 12px;
+    margin-top: auto;
 
     font-size: @text-size--medium;
     line-height: @text-height--medium;
 
     &::after {
-      left: 134px;
+      left: 130px;
       top: 4px;
     }
   }

@@ -17,77 +17,68 @@
   width: 100%;
   min-height: 60px;
 
-  &::before {
+  &--function::after {
     content: "";
 
     position: absolute;
-    top: 2px;
+    top: 0;
     left: 0;
 
     width: 60px;
     height: 60px;
 
-    background-color: @color-main;
-  }
-
-  &--function::after {
-    content: "";
-
-    position: absolute;
-    top: 17px;
-    left: 17px;
-
-    width: 26px;
-    height: 29px;
-
     background-image: url("../../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: @color-main;
   }
 
   &--release::after {
     content: "";
 
     position: absolute;
-    top: 16px;
-    left: 15px;
+    top: 0;
+    left: 0;
 
-    width: 30px;
-    height: 31px;
+    width: 60px;
+    height: 60px;
 
     background-image: url("../../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: @color-main;
   }
 
   &--use::after {
     content: "";
 
     position: absolute;
-    top: 19px;
-    left: 18px;
+    top: 0;
+    left: 0;
 
-    width: 23px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
 
     background-image: url("../../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: @color-main;
   }
 
   &--changes::after {
     content: "";
 
     position: absolute;
-    top: 17px;
-    left: 17px;
+    top: 0;
+    left: 0;
 
-    width: 26px;
-    height: 31px;
+    width: 60px;
+    height: 60px;
 
     background-image: url("../../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: @color-main;
   }
 }
 
@@ -104,11 +95,59 @@
   .instruction-list {
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 603px;
-    margin-top: 72px;
+    padding-right: 70px;
+    margin-top: 70px;
+
+    counter-reset: section;
+  }
+
+  .instruction-list__item {
+    width: 40%;
+    margin-bottom: 134px;
+
+    &--function::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--release::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--use::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--changes::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::before {
+      position: absolute;
+      top: -39px;
+      left: 117px;
+
+      z-index: -1;
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 281px;
+      line-height: 281px;
+      color: @color-block--gray;
+
+      counter-increment: section;
+      content: counter(section);
+    }
   }
 
   .instruction-list__description {
+    width: 97%;
+    padding-left: 0;
+    padding-top: 111px;
+
     font-size: 16px;
     line-height: 24px;
   }

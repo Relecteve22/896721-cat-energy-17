@@ -1,8 +1,28 @@
 .header-promo {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 0 @mobile-padding;
   margin-bottom: 22px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    height: 305px;
+    width: 100vw;
+
+    background-color: #65a93c;
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .header-promo__title {
@@ -43,13 +63,19 @@
 @media (min-width: @tablet-width) {
   .header-promo {
     width: 100%;
+    padding: 0 @tablet-padding;
     padding-top: 54px;
     margin-bottom: 0;
+
+    &::after {
+      display: none;
+    }
   }
 
   .header-promo__title {
     width: 420px;
     padding: 0;
+    margin-top: 2px;
     margin-left: 87px;
 
     font-size: @text-size--very-big;
@@ -72,15 +98,17 @@
   }
 
   .header-promo__item-img {
+    order: 1;
     width: 709px;
     height: 609px;
+    margin-top: -80px;
     margin-bottom: 0;
   }
 
   .header-promo__pick-program {
+    z-index: 1;
     margin-left: 88px;
-    margin-top: -581px;
-    margin-bottom: 529px;
+    margin-top: 29px;
   }
 }
 

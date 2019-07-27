@@ -1,5 +1,8 @@
 .instruction-use {
+  position: relative;
+
   width: 100%;
+  padding: 0 @mobile-padding;
   padding-bottom: 43px;
 }
 
@@ -13,7 +16,20 @@
 
 @media (min-width: @tablet-width) {
   .instruction-use {
-    width: 708px;
+    min-height: 603px;
+    padding: 0 @tablet-padding;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+
+      width: 100vw;
+      height: 1px;
+
+      background-color: @color-block--gray;
+    }
   }
 
   .instruction-use__title {
