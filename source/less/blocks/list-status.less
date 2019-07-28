@@ -45,3 +45,24 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .list-status__item {
+    width: 162px;
+  }
+
+  .list-status__wrappers {
+    background-color: transparent;
+  }
+
+  .list-status__result {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .list-status__objective {
+    font-size: @text-size--small;
+    line-height: 14px;
+    color: @color-description;
+  }
+}
