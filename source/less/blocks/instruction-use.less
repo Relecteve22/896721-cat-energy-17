@@ -43,10 +43,15 @@
 
 @media (min-width: @desktop-width) {
   .instruction-use {
-    width: 1220px;
+    width: 1300px;
     min-height: 616px;
-    padding: 0;
+    padding: 0 @desktop-padding;
+    margin: 0 auto;
     margin-bottom: 33px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .instruction-use__title {

@@ -69,10 +69,25 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    width: 530px;
+    min-width: 478px;
+  }
+
+  .site-list__item a {
+    padding: 19px 0;
+    padding-bottom: 9px;
+
+    font-size: @text-size--medium;
+  }
+
+  .site-list__white a {
+    color: #ffffff;
   }
 
   .site-list__item-active {
     border-bottom-color: #ffffff;
+  }
+
+  .site-list__item-active--white a {
+    border-bottom: 2px #ffffff solid;
   }
 }

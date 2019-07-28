@@ -183,13 +183,56 @@
 @media (min-width: @desktop-width) {
   .services {
     flex-direction: row;
-    width: 1220px;
+    width: 1300px;
     min-height: 372px;
+    padding: 0 @desktop-padding;
     padding-top: 105px;
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 
   .services__item {
     width: 570px;
+
+    &::before {
+      top: 45px;
+      left: 52px;
+      right: auto;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--weight-loss::after {
+      top: 39px;
+      left: 67px;
+      right: auto;
+
+      width: 71px;
+      height: 97px;
+    }
+
+    &--weight-down::after {
+      top: 67px;
+      left: 34px;
+      right: auto;
+
+      width: 134px;
+      height: 57px;
+    }
+  }
+
+  .services__title {
+    margin: 0;
+    padding-left: 164px;
+    margin-top: 25px;
+  }
+
+  .services__description {
+    width: 100%;
+    padding-top: 49px;
+  }
+
+  .services__link {
+    margin-bottom: 15px;
   }
 }

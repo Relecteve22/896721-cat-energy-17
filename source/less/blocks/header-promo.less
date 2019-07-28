@@ -6,23 +6,6 @@
   width: 100%;
   padding: 0 @mobile-padding;
   margin-bottom: 22px;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-
-    height: 305px;
-    width: 100vw;
-
-    background-color: #65a93c;
-    background-image: url("../../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 
 .header-promo__title {
@@ -66,10 +49,6 @@
     padding: 0 @tablet-padding;
     padding-top: 54px;
     margin-bottom: 0;
-
-    &::after {
-      display: none;
-    }
   }
 
   .header-promo__title {
@@ -116,25 +95,25 @@
   .header-promo {
     position: relative;
 
-    width: 1220px;
+    width: 1300px;
     min-height: 560px;
-    padding-top: 0;
+    padding: 0 @desktop-padding;
     margin: 0 auto;
   }
 
   .header-promo__title {
-    margin-top: 110px;
+    margin-top: 109px;
     margin-left: 80px;
   }
 
   .header-promo__slogan {
-    margin-top: 40px;
-    padding-left: 81px;
+    margin-top: 41px;
+    padding-left: 80px;
   }
 
   .header-promo__pick-program {
-    margin-left: 81px;
-    margin-top: 34px;
+    margin-left: 80px;
+    margin-top: 32px;
     margin-bottom: 0;
   }
 
@@ -142,9 +121,11 @@
     content: "";
 
     position: absolute;
-    right: 218px;
+    top: 29px;
+    right: 257px;
 
     width: 552px;
     height: 499px;
+    margin: 0;
   }
 }
