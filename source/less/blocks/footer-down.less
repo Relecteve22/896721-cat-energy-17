@@ -17,6 +17,14 @@
   margin-bottom: 33px;
 }
 
+.footer-down__logo:hover .footer-down__logo-image {
+  opacity: 0.8;
+}
+
+.footer-down__logo:active .footer-down__logo-image {
+  opacity: 0.6;
+}
+
 @media (min-width: @tablet-width) {
   .footer-down {
     min-height: 150px;
@@ -24,6 +32,7 @@
 
   .footer-down__container {
     flex-direction: row;
+    align-items: center;
     width: 100%;
     min-height: 150px;
     padding: 0 @tablet-padding;
@@ -31,10 +40,7 @@
   }
 
   .footer-down__logo {
-    width: 128px;
     margin: 0;
-    margin-top: 60px;
-    margin-bottom: 0;
   }
 }
 

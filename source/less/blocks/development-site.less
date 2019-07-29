@@ -24,21 +24,26 @@
   height: 34px;
 }
 
+.development-site__item-svg path {
+  fill: #666666;
+}
+
+.development-site__item:hover path {
+  fill: @color-main;
+}
+
+.development-site__item:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .development-site {
-    width: 100%;
-    padding: 0 @mobile-padding;
+    padding: 0;
     margin: 0;
-    margin-left: auto;
   }
 
   .development-site__item {
-    padding-top: 52px;
-  }
-
-  .development-site__item-image {
-    width: 128px;
-    height: 24px;
+    padding-top: 0;
   }
 }
 

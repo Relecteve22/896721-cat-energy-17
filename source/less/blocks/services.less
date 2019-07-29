@@ -107,6 +107,18 @@
   }
 }
 
+.services__link:hover {
+  &::after {
+    width: 34px;
+
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+}
+
+.services__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .services {
     min-height: 774px;
