@@ -19,15 +19,26 @@
   color: @color-description;
 }
 
+.development-site__item-image {
+  width: 27px;
+  height: 34px;
+}
+
 @media (min-width: @tablet-width) {
   .development-site {
-    width: 162px;
+    width: 100%;
+    padding: 0 @mobile-padding;
     margin: 0;
     margin-left: auto;
   }
 
   .development-site__item {
     padding-top: 52px;
+  }
+
+  .development-site__item-image {
+    width: 128px;
+    height: 24px;
   }
 }
 
