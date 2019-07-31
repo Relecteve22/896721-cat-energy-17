@@ -1,8 +1,30 @@
+.additional-catalog {
+  padding: 0 @mobile-padding;
+
+  overflow: hidden;
+}
+
 .additional-catalog__title {
+  position: relative;
+
   margin: 0;
 
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
   color: @color-main-text;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 247px;
+
+    width: 100vw;
+    height: 3px;
+    z-index: -1;
+
+    background-color: @color-main;
+  }
 }

@@ -1,5 +1,54 @@
+.development-site {
+  min-height: 78px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.development-site__item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+}
+
 .development-site__item-text {
+  padding-top: 9px;
+
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: @color-description;
+}
+
+.development-site__item-image {
+  width: 27px;
+  height: 34px;
+}
+
+.development-site__item-svg path {
+  fill: #666666;
+}
+
+.development-site__item:hover path {
+  fill: @color-main;
+}
+
+.development-site__item:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .development-site {
+    padding: 0;
+    margin: 0;
+  }
+
+  .development-site__item {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .development-site__item-text {
+    padding-top: 21px;
+  }
 }

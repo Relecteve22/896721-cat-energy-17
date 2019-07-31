@@ -1,3 +1,13 @@
+.switch-cat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  padding-left: 3px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
 .switch-cat__toogle {
   padding: 0;
 
@@ -7,4 +17,38 @@
 
   background-color: transparent;
   border: 0;
+
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .switch-cat__progress {
+    position: relative;
+
+    width: 84px;
+    height: 14px;
+
+    border-radius: 6px;
+    border: solid 1px #cdcdcd;
+    background-color: #ffffff;
+  }
+
+  .switch-cat__tog {
+    position: absolute;
+    top: 3px;
+    left: 6px;
+
+    width: 35px;
+    height: 6px;
+
+    border-radius: 3px;
+    background-color: @color-main;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .switch-cat {
+    margin: 0;
+  }
 }
