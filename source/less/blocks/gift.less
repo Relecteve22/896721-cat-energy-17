@@ -1,15 +1,38 @@
 .gift {
+  position: relative;
+
+  min-height: 289px;
+  margin-top: 40px;
+  margin-bottom: 34px;
+
   background-color: @color-main;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 65px;
+    left: 40%;
+
+    width: 56px;
+    height: 61px;
+
+    background-image: url("../../img/icon-gift.svg");
+  }
 }
 
 .gift__description {
-  margin: 0;
+  width: 57%;
+  margin: 0 auto;
+  padding-top: 187px;
 
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: @text-height--medium;
   color: #ffffff;
   font-weight: normal;
+  text-align: center;
 }
