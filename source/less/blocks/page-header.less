@@ -13,6 +13,11 @@
     background-image: url("../../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 
@@ -71,6 +76,11 @@
     border-bottom: none;
   }
 
+  .page-header__logo {
+    width: 174px;
+    height: 59px;
+  }
+
   .page-header__logo-image {
     width: 174px;
     height: 59px;
@@ -112,5 +122,6 @@
 
   .page-header__logo-image {
     width: 203px;
+    height: 60px;
   }
 }

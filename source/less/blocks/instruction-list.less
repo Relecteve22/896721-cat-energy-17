@@ -27,10 +27,15 @@
     width: 60px;
     height: 60px;
 
+    background-color: @color-main;
     background-image: url("../../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: @color-main;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/advantage-leaf@2x.png");
+      background-size: 26px 29px;
+    }
   }
 
   &--release::after {

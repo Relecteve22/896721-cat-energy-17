@@ -10,6 +10,11 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
+
   &::after {
     content: "";
 
