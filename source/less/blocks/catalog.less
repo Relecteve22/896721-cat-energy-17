@@ -112,6 +112,8 @@
     width: 79%;
     margin: 0 auto;
     margin-top: 7px;
+
+    text-align: center;
   }
 }
 
@@ -121,15 +123,17 @@
 }
 
 .catalog-image {
-  width: 140px;
   height: 144px;
-  margin: 0 auto;
 }
 
 .catalog__link-image {
   display: flex;
-  height: 144px;
+  height: auto;
   width: 50%;
+}
+
+.catalog__link-image picture {
+  margin: 0 auto;
 }
 
 .catalog__wrapper {
@@ -152,29 +156,89 @@
 }
 
 @media (min-width: @tablet-width) {
-  .catalog {
-    width: 708px;
+  .catalog__title {
+    padding-top: 57px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+
+    font-size: @text-size--very-big;
   }
 
   .catalog__list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 @tablet-padding;
   }
 
   .catalog__item {
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: nowrap;
     width: 324px;
-    min-height: 430px;
-    margin-top: 140px;
+    min-height: 512px;
+    padding: 0;
+    margin-top: 59px;
 
     border: none;
+    background-image: linear-gradient(to bottom, #ffffff 16%, @color-block--gray 16%);
+
+    &--show {
+      padding: 0 38px;
+
+      background-image: none;
+      background-color: #ffffff;
+      border: solid 1px #cdcdcd;
+    }
   }
 
-  .catalog__title {
-    padding-top: 64px;
-    padding-left: 10px;
+  .catalog-image {
+    height: auto;
+  }
 
-    font-size: @text-size--very-big;
+  .catalog__link-image {
+    order: 1;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .catalog__wrapper {
+    width: 100%;
+    padding: 0 38px;
+    margin-bottom: 31px;
+  }
+
+  .catalog__item-title {
+    width: 130px;
+    margin: 0 auto;
+
+    font-size: @text-size--medium;
+    text-align: center;
+  }
+
+  .catalog__info {
+    margin-top: 20px;
+  }
+
+  .catalog__info tr {
+    padding: 7px 0;
+
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog__value {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog__field {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog__order {
+    order: -1;
+    width: 77%;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
 }
