@@ -26,7 +26,7 @@
 
   font-size: 16px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   color: #222222;
 }
@@ -71,4 +71,41 @@
 
   font-size: 16px;
   line-height: @text-height--medium;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-list {
+    margin-top: 80px;
+  }
+
+  .additional-list__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 38px;
+
+    border-left: solid 1px #cdcdcd;
+    border-right: solid 1px #cdcdcd;
+  }
+
+  .additional-list__title {
+    margin-top: 25px;
+    padding-left: 0;
+
+    font-size: @text-size--medium;
+    line-height: @text-height--medium;
+  }
+
+  .additional-list__info {
+    margin-left: auto;
+    margin-top: 16px;
+  }
+
+  .additional-list__order {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+
+  .additional-catalog__field {
+    padding-left: 52px;
+  }
 }

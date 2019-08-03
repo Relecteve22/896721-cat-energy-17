@@ -28,3 +28,27 @@
     background-color: @color-main;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .additional-catalog {
+    margin-top: 67px;
+    padding: 0 @tablet-padding;
+  }
+
+  .additional-catalog__title {
+    width: 360px;
+    padding-left: 37px;
+    padding-right: 14px;
+
+    font-size: @text-size--big;
+    line-height: @text-height--big;
+
+    background-color: #ffffff;
+    box-sizing: content-box;
+
+    &::after {
+      top: 61%;
+      left: -30px;
+    }
+  }
+}
