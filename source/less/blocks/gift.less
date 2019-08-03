@@ -1,6 +1,8 @@
 .gift {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
   min-height: 289px;
   margin-top: 40px;
   margin-bottom: 34px;
@@ -40,4 +42,33 @@
   color: #ffffff;
   font-weight: normal;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    flex-direction: row;
+    min-height: 200px;
+    margin-top: 68px;
+    margin-bottom: 76px;
+
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+    }
+
+    &::after {
+      left: 90px;
+    }
+  }
+
+  .gift__description {
+    width: 160px;
+    padding: 0;
+    padding-top: 71px;
+    margin: 0;
+    margin-left: 423px;
+
+    text-align: left;
+  }
 }
