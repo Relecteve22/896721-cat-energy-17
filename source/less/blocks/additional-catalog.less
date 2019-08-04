@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   padding: 0 @mobile-padding;
+
+  overflow: hidden;
 }
 
 .additional-catalog__title {
@@ -62,15 +64,17 @@
     padding: 0 40px;
     margin: 0 auto;
     margin-top: 75px;
+
+    overflow: visible;
   }
 
   .additional-catalog__title {
-    padding-left: 39px;
-    margin-left: 30px;
+    padding-left: 0;
+    margin-left: 0;
 
     &::after {
       top: 23px;
-      left: -112px;
+      left: -167px;
     }
   }
 }
