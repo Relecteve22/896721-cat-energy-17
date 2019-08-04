@@ -1,7 +1,7 @@
 .additional-catalog {
+  display: flex;
+  flex-direction: column;
   padding: 0 @mobile-padding;
-
-  overflow: hidden;
 }
 
 .additional-catalog__title {
@@ -49,6 +49,28 @@
     &::after {
       top: 61%;
       left: -30px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-catalog {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1300px;
+    padding: 0 40px;
+    margin: 0 auto;
+    margin-top: 75px;
+  }
+
+  .additional-catalog__title {
+    padding-left: 39px;
+    margin-left: 30px;
+
+    &::after {
+      top: 23px;
+      left: -112px;
     }
   }
 }
