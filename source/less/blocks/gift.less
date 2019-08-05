@@ -22,12 +22,14 @@
 
     position: absolute;
     top: 65px;
-    left: 40%;
+    left: 50%;
 
     width: 56px;
     height: 61px;
 
     background-image: url("../../img/icon-gift.svg");
+
+    transform: translateX(-50%);
   }
 }
 
@@ -55,6 +57,7 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../img/gift-photo-tablet@2x.jpg");
+      background-size: cover;
     }
 
     &::after {
@@ -83,6 +86,7 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../img/gift-photo-desktop@2x.jpg");
+      background-size: cover;
     }
 
     &::after {
