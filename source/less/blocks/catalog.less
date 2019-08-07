@@ -82,6 +82,8 @@
 }
 
 .catalog__value {
+  display: block;
+
   padding: 0;
 
   font-family: "Arial", sans-serif;
@@ -91,7 +93,7 @@
 }
 
 .catalog__field {
-  float: right;
+  display: block;
   padding: 0;
 
   font-family: "Arial", sans-serif;
@@ -136,6 +138,7 @@
 }
 
 .catalog__link-image picture {
+  height: 144px;
   margin: 0 auto;
 }
 
@@ -204,6 +207,10 @@
 
       background-image: url("../../img/icon-plus.svg");
     }
+  }
+
+  .catalog__link-image picture {
+    height: auto;
   }
 
   .catalog-image {
@@ -286,6 +293,11 @@
     padding-top: 75px;
     padding-bottom: 23px;
     padding-left: 20px;
+  }
+
+  .catalog__link-image {
+    min-height: 208px;
+    align-items: flex-end;
   }
 
   .catalog__list {

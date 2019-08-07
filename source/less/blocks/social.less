@@ -1,12 +1,9 @@
 .social {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  min-height: 62px;
-  width: 87.5%;
-  padding: 0 70px;
-  padding-top: 22px;
-  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  padding: 11px 0;
+  margin: 0;
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
@@ -14,7 +11,20 @@
 }
 
 .social__item {
-  width: 16%;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .social__link:hover path {
@@ -40,7 +50,9 @@
     width: 150px;
     padding: 0;
     padding-top: 12px;
+    padding-left: 18px;
     margin: 0;
+    margin-top: 35px;
     margin-left: auto;
 
     border: none;
@@ -48,6 +60,7 @@
 
   .social__item {
     width: 26%;
+    margin-right: 18px;
   }
 
   .social__vk-icon {
@@ -70,6 +83,6 @@
 
 @media (min-width: @desktop-width) {
   .social {
-    margin-left: 411px;
+    margin-left: 389px;
   }
 }
