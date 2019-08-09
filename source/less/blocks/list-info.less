@@ -1,34 +1,160 @@
 .list-info {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 163px;
+  padding: 0 @mobile-padding;
   margin: 0;
 
   list-style: none;
 }
 
+.list-info__label {
+  position: relative;
+
+  display: flex;
+
+  &--email::after {
+    content: "";
+
+    position: absolute;
+    top: 16px;
+    right: 15px;
+
+    width: 18px;
+    height: 14px;
+
+    background-image: url("../../img/icon-mail.svg");
+  }
+
+  &--phone::after {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    right: 13px;
+
+    width: 21px;
+    height: 21px;
+
+    background-image: url("../../img/icon-phone.svg");
+  }
+}
+
 .list-info__text {
+  margin-right: 14px;
+
+  align-self: center;
+
   font-size: 16px;
   color: #222222;
   text-transform: uppercase;
 }
 
 .list-info__input {
-  padding: 0;
+  position: relative;
+
+  flex-grow: 1;
+  padding: 13px;
+
+  font-size: 16px;
+  line-height: @text-height--small;
+  color: @color-description;
+
+  border: solid 1px #cdcdcd;
+
+  &--email {
+    padding: 13px 14px;
+    padding-right: 38px;
+  }
+
+  &--phone {
+    padding: 13px 14px;
+    padding-right: 38px;
+  }
 }
 
 .list-info__input::placeholder {
+  font-size: 16px;
+  line-height: @text-height--small;
   text-transform: uppercase;
   color: @color-description;
 }
 
 .list-info__type-programm {
+  padding-left: 16px;
+  padding-top: 6px;
+
   font-size: 16px;
   color: #222222;
   text-transform: uppercase;
 }
 
 .list-info__additional-item {
+  padding-left: 16px;
+  padding-top: 5px;
+
   font-size: 16px;
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
+}
+
+.list-info__login-radio {
+  position: relative;
+
+  display: flex;
+}
+
+.list-info__radio-indicator {
+  position: relative;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: solid 1px #cdcdcd;
+}
+
+.list-info__radio-button:checked + .list-info__radio-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: @color-main;
+  border-radius: 50%;
+}
+
+.list-info__login-checkbox {
+  position: relative;
+
+  display: flex;
+}
+
+.list-info__checkbox-indicator {
+  position: relative;
+
+  width: 30px;
+  height: 30px;
+
+  border: solid 1px #cdcdcd;
+}
+
+.list-info__checkbox-button:checked + .list-info__checkbox-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  width: 22px;
+  height: 17px;
+
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
 }

@@ -43,65 +43,67 @@
           программу питания для вашего кота
         </p>
         <form action="https://echo.htmlacademy.ru" method="get" class="form">
-          <fieldset class="main-info">
-            <ul class="main-info__list list-info">
-              <li class="list-info__item">
-                <label class="list-info__label">
-                  <span class="list-info__text">Имя:<sup>*</sup></span>
-                  <input class="list-info__input" type="text" name="name-cat" placeholder="Барсик" required>
-                </label>
-              </li>
-              <li class="list-info__item">
-                <label class="list-info__label">
-                  <span class="list-info__text">Вес (кг):<sup>*</sup></span>
-                  <input class="list-info__input" type="text" name="weight-cat" placeholder="7" required>
-                </label>
-              </li>
-              <li class="list-info__item">
-                <label class="list-info__label">
-                  <span class="list-info__text">Возраст (лет):</span>
-                  <input class="list-info__input" type="text" name="age-cat" placeholder="7">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="info-programm">
-            <legend class="visually-hidden">Выбор программы питания</legend>
-            <ul class="info-programm__list list-info">
-              <li class="list-info__item">
-                <label class="list-info__login-radio">
-                  <input type="radio" name="programm" class="visually-hidden list-info__radio-button" checked>
-                  <span class="list-info__radio-indicator"></span>
-                  <span class="list-info__type-programm">Похудение</span>
-                </label>
-              </li>
-              <li class="list-info__item">
-                <label class="list-info__login-radio">
-                  <input type="radio" name="programm" class="visually-hidden list-info__radio-button">
-                  <span class="list-info__radio-indicator"></span>
-                  <span class="list-info__type-programm">Набор массы</span>
-                </label>
-              </li>
-              <li class="list-info__item">
-                <label class="list-info__login-radio">
-                  <input type="radio" name="programm" class="visually-hidden list-info__radio-button">
-                  <span class="list-info__radio-indicator"></span>
-                  <span class="list-info__type-programm">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="main-info">
+              <ul class="main-info__list list-info">
+                <li class="list-info__item">
+                  <label class="list-info__label">
+                    <span class="list-info__text">Имя:<sup>*</sup></span>
+                    <input class="list-info__input" type="text" name="name-cat" placeholder="Барсик" required>
+                  </label>
+                </li>
+                <li class="list-info__item">
+                  <label class="list-info__label">
+                    <span class="list-info__text">Вес (кг):<sup>*</sup></span>
+                    <input class="list-info__input" type="text" name="weight-cat" placeholder="7" required>
+                  </label>
+                </li>
+                <li class="list-info__item">
+                  <label class="list-info__label">
+                    <span class="list-info__text">Возраст (лет):</span>
+                    <input class="list-info__input" type="text" name="age-cat" placeholder="7">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="info-programm">
+              <legend class="visually-hidden">Выбор программы питания</legend>
+              <ul class="info-programm__list list-info">
+                <li class="list-info__item">
+                  <label class="list-info__login-radio">
+                    <input type="radio" name="programm" class="visually-hidden list-info__radio-button" checked>
+                    <span class="list-info__radio-indicator"></span>
+                    <span class="list-info__type-programm">Похудение</span>
+                  </label>
+                </li>
+                <li class="list-info__item">
+                  <label class="list-info__login-radio">
+                    <input type="radio" name="programm" class="visually-hidden list-info__radio-button">
+                    <span class="list-info__radio-indicator"></span>
+                    <span class="list-info__type-programm">Набор массы</span>
+                  </label>
+                </li>
+                <li class="list-info__item">
+                  <label class="list-info__login-radio">
+                    <input type="radio" name="programm" class="visually-hidden list-info__radio-button">
+                    <span class="list-info__radio-indicator"></span>
+                    <span class="list-info__type-programm">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="contact">
             <legend class="contact__title">Контактные данные (владельца кота)</legend>
             <ul class="contact__list list-info">
-              <li class="list-info__item list-info__item--emai">
-                <label class="list-info__label">
+              <li class="list-info__item">
+                <label class="list-info__label list-info__label--email">
                   <span class="list-info__text">E-mail:<sup>*</sup></span>
                   <input class="list-info__input list-info__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                 </label>
               </li>
-              <li class="list-info__item list-info__item--phone">
-                <label class="list-info__label">
+              <li class="list-info__item">
+                <label class="list-info__label list-info__label--phone">
                   <span class="list-info__text">Телефон:<sup>*</sup></span>
                   <input class="list-info__input list-info__input--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
                 </label>
@@ -145,9 +147,11 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить заявку</button>
+          <div class="form__wrapper--button">
+            <button class="form__button button" type="submit">Отправить заявку</button>
+          </div>
         </form>
-        <small class="selection-program__legend selection-program__legend--bottom">
+        <small class="selection-program__legend">
           <sup>*</sup> — Обязательные поля
         </small>
       </section>

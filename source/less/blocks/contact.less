@@ -1,10 +1,41 @@
 .contact {
+  position: relative;
+
   padding: 0;
+  margin: 0;
 
   border: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 3px;
+
+    background-color: @color-main;
+  }
 }
 
 .contact__title {
+  width: 221px;
+  padding-top: 31px;
+  padding-left: @mobile-padding;
+  margin-bottom: 32px;
+
   font-size: 24px;
   line-height: 24px;
+
+  background-color: #ffffff;
+}
+
+.contact__list {
+  min-height: 105px;
+}
+
+.contact__list .list-info__text {
+  margin-right: 13px;
 }
