@@ -12,31 +12,25 @@
   position: relative;
 
   display: flex;
+}
 
-  &--email::after {
-    content: "";
+.list-info__svg {
+  position: absolute;
 
-    position: absolute;
+  &--email {
     top: 16px;
     right: 15px;
 
     width: 18px;
     height: 14px;
-
-    background-image: url("../../img/icon-mail.svg");
   }
 
-  &--phone::after {
-    content: "";
-
-    position: absolute;
+  &--phone {
     top: 12px;
     right: 13px;
 
     width: 21px;
     height: 21px;
-
-    background-image: url("../../img/icon-phone.svg");
   }
 }
 
@@ -62,6 +56,11 @@
 
   border: solid 1px #cdcdcd;
 
+  &:invalid {
+    border-color: #ff8282;
+    outline: none;
+  }
+
   &:active {
     border-color: @color-description;
     outline: none;
@@ -76,6 +75,14 @@
     padding: 13px 14px;
     padding-right: 38px;
   }
+}
+
+.list-info__input:invalid + .list-info__svg path {
+  fill: #ff8282;
+}
+
+.list-info__input:active + .list-info__svg path {
+  fill: @color-main;
 }
 
 .list-info__input::placeholder {
@@ -246,5 +253,9 @@
 
     font-size: @text-size--medium;
     line-height: @text-height--medium;
+  }
+
+  .additional__list .list-info__item {
+    width: 284px;
   }
 }

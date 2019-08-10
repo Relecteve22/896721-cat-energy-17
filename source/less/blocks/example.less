@@ -95,11 +95,14 @@
   }
 
   .example__status {
-    width: 52%;
+    width: 50%;
     margin-top: 27px;
   }
 
   .example__wrappers--description {
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
     min-height: 577px;
     padding: 0 @tablet-padding;
   }
@@ -153,10 +156,7 @@
   }
 
   .example__price {
-    width: 27%;
-    margin: 0;
-    margin-left: 515px;
-    margin-top: -61px;
+    width: 50%;
 
     font-size: @text-size--medium;
     line-height: @text-height--medium;
