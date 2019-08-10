@@ -1,7 +1,7 @@
 .contact {
   position: relative;
 
-  padding: 0;
+  padding: 0 @mobile-padding;
   margin: 0;
 
   border: 0;
@@ -23,7 +23,9 @@
 .contact__title {
   width: 221px;
   padding-top: 31px;
-  padding-left: @mobile-padding;
+  padding-right: 10px;
+  padding-left: 18px;
+  margin-left: -20px;
   margin-bottom: 32px;
 
   font-size: 24px;
@@ -34,8 +36,40 @@
 
 .contact__list {
   min-height: 105px;
+  padding: 0;
 }
 
 .contact__list .list-info__text {
   margin-right: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .contact {
+    padding: 0 @tablet-padding;
+    margin-top: 44px;
+
+    &::after {
+      top: 53px;
+    }
+  }
+
+  .contact__title {
+    width: 592px;
+    margin-left: 0;
+    margin-bottom: 76px;
+    padding-left: 39px;
+
+    font-size: @text-size--big;
+    line-height: @text-height--big;
+  }
+
+  .contact__list {
+    min-height: 124px;
+    padding: 0 36px;
+  }
+
+  .contact__list .list-info__text {
+    margin-right: 20px;
+    padding-left: 3px;
+  }
 }

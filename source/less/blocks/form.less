@@ -1,7 +1,3 @@
-.form {
-  display: block;
-}
-
 .form__wrapper--button {
   padding: 0 @mobile-padding;
 }
@@ -13,4 +9,10 @@
 
   font-size: 16px;
   line-height: @text-height--medium;
+}
+
+@media (min-width: @tablet-width) {
+  .form__wrapper {
+    padding: 0 68px;
+  }
 }

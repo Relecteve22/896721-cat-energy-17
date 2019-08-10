@@ -37,3 +37,30 @@
 .additional__list {
   min-height: 157px;
 }
+
+@media (min-width: @tablet-width) {
+  .additional {
+    padding: 0 @tablet-padding;
+    margin-top: 36px;
+
+    &::after {
+      top: 49px;
+    }
+  }
+
+  .additional__title {
+    width: 291px;
+    margin-bottom: 24px;
+    padding-left: 39px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 157px;
+    padding: 0 40px;
+  }
+}
