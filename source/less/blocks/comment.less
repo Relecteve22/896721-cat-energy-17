@@ -64,6 +64,8 @@
 
     &::after {
       top: 51px;
+
+      width: 100%;
     }
   }
 
@@ -91,5 +93,16 @@
   .comment__description::placeholder {
     font-size: @text-size--medium;
     line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+    width: 1300px;
+    margin: 0 auto;
+
+    &::after {
+      width: 100%;
+    }
   }
 }

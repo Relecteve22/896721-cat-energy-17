@@ -45,6 +45,8 @@
 
     &::after {
       top: 49px;
+
+      width: 100%;
     }
   }
 
@@ -62,5 +64,16 @@
     flex-wrap: wrap;
     min-height: 142px;
     padding: 0 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional {
+    width: 1300px;
+    margin: 0 auto;
+
+    &::after {
+      width: 100%;
+    }
   }
 }

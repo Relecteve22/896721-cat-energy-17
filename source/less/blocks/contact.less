@@ -50,6 +50,8 @@
 
     &::after {
       top: 53px;
+
+      width: 100%;
     }
   }
 
@@ -71,5 +73,16 @@
   .contact__list .list-info__text {
     margin-right: 20px;
     padding-left: 3px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact {
+    width: 1300px;
+    margin: 0 auto;
+
+    &::after {
+      width: 100%;
+    }
   }
 }
