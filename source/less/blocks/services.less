@@ -195,6 +195,7 @@
 @media (min-width: @desktop-width) {
   .services {
     flex-direction: row;
+    justify-content: flex-start;
     width: 1300px;
     min-height: 372px;
     padding: 0 @desktop-padding;
@@ -204,6 +205,10 @@
 
   .services__item {
     width: 570px;
+
+    &--weight-down {
+      margin-left: auto;
+    }
 
     &::before {
       top: 45px;
