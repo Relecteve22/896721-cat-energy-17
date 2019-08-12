@@ -25,23 +25,15 @@
 
   justify-content: center;
   align-items: center;
-}
 
-.social__link:hover path {
-  fill: @color-main;
-}
+  &:hover {
+    fill: @color-main;
+  }
 
-.social__link:hover path + circle {
-  fill: @color-main;
-}
-
-.social__link:active path {
-  fill: @color-main;
-  opacity: 0.3;
-}
-
-.social__link:active path + circle {
-  fill: @color-main;
+  &:active {
+    fill: @color-main;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
