@@ -5,20 +5,6 @@
   margin: 0;
 
   border: 0;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 41px;
-    left: 0;
-    z-index: -1;
-
-    width: 100vw;
-    height: 3px;
-
-    background-color: @color-main;
-  }
 }
 
 .comment__title {
@@ -61,12 +47,6 @@
   .comment {
     padding: 0 69px;
     margin-top: 37px;
-
-    &::after {
-      top: 51px;
-
-      width: 100%;
-    }
   }
 
   .comment__title {
@@ -99,10 +79,12 @@
 @media (min-width: @desktop-width) {
   .comment {
     width: 1300px;
+    padding: 0 @desktop-padding;
     margin: 0 auto;
+    margin-top: 67px;
+  }
 
-    &::after {
-      width: 100%;
-    }
+  .comment__title {
+    padding-top: 0;
   }
 }
