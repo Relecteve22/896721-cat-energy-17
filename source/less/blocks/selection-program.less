@@ -22,17 +22,6 @@
   text-transform: uppercase;
 }
 
-.selection-program__legend {
-  margin: 0 auto;
-  margin-top: 22px;
-  margin-bottom: 31px;
-
-  font-family: "Arial", sans-serif;
-  font-size: @text-size--small;
-  line-height: 16px;
-  color: @color-description;
-}
-
 .selection-program__legend sup {
   top: 0;
 }
@@ -59,32 +48,26 @@
     font-size: @text-size--medium;
     line-height: 30px;
   }
-
-  .selection-program__legend {
-    margin: 0;
-    margin-top: -36px;
-    margin-right: 174px;
-    margin-bottom: 18px;
-    margin-left: auto;
-
-    font-size: 16px;
-    line-height: 16px;
-  }
 }
 
 @media (min-width: @desktop-width) {
+  .selection-program {
+    margin-bottom: 82px;
+  }
+
   .selection-program__title {
-    padding: 0 150px;
+    padding: 0;
     padding-top: 76px;
   }
 
   .selection-program__description {
-    width: 500px;
-    padding-left: 150px;
+    width: 400px;
+    padding-left: 0;
   }
 
-  .selection-program__legend {
-    margin-right: 540px;
-    margin-bottom: 29px;
+  .selection-program__wrapper {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 @desktop-padding;
   }
 }

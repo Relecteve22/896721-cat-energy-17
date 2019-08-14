@@ -37,11 +37,13 @@
     <main class="page-main">
       <h1 class="visually-hidden">Cat Energy - сайт по подбору питанию для котов</h1>
       <section class="selection-program">
-        <h2 class="selection-program__title">Подбор программы</h2>
-        <p class="selection-program__description">
-          Заполните анкету и мы подберем
-          программу питания для вашего кота
-        </p>
+        <div class="selection-program__wrapper">
+          <h2 class="selection-program__title">Подбор программы</h2>
+          <p class="selection-program__description">
+            Заполните анкету и мы подберем
+            программу питания для вашего кота
+          </p>
+        </div>
         <form action="https://echo.htmlacademy.ru" method="get" class="form">
           <div class="form__wrapper">
             <fieldset class="main-info">
@@ -93,9 +95,9 @@
               </ul>
             </fieldset>
           </div>
-          <div class="qwerty">
-            <fieldset class="contact">
-              <legend class="contact__title">Контактные данные (владельца кота)</legend>
+          <div class="wrapper-info">
+            <fieldset class="form__fieldset contact">
+              <legend class="form__legend contact__title">Контактные данные (владельца кота)</legend>
               <ul class="contact__list list-info">
                 <li class="list-info__item">
                   <label class="list-info__label list-info__label--email">
@@ -118,15 +120,15 @@
               </ul>
             </fieldset>
           </div>
-          <div class="qwerty">
-            <fieldset class="comment">
-              <legend class="comment__title">Комментарий</legend>
+          <div class="wrapper-info">
+            <fieldset class="form__fieldset comment">
+              <legend class="form__legend comment__title">Комментарий</legend>
               <textarea class="comment__description" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
           </div>
-          <div class="qwerty">
-            <fieldset class="additional">
-              <legend class="additional__title">Дополнительно</legend>
+          <div class="wrapper-info">
+            <fieldset class="form__fieldset additional">
+              <legend class="form__legend additional__title">Дополнительно</legend>
               <ul class="additional__list list-info">
                 <li class="list-info__item">
                   <label class="list-info__login-checkbox">
@@ -159,13 +161,13 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__wrapper--button">
+          <div class="form__wrapper form__wrapper--button">
             <button class="form__button button" type="submit">Отправить заявку</button>
+            <small class="form__legend">
+              <sup>*</sup> — Обязательные поля
+            </small>
           </div>
         </form>
-        <small class="selection-program__legend">
-          <sup>*</sup> — Обязательные поля
-        </small>
       </section>
     </main>
     <footer class="page-footer">
@@ -182,7 +184,15 @@
           </address>
         </div>
         <div class="about-us__map page-map">
-          <img class="page-map__map" src="http://placehold.it/320x362" alt="Как до нас добраться">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="../../img/bg-map-desktop@1x.webp 1x, ../../img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="../../img/bg-map-tablet@1x.webp 1x, ../../img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="../../img/bg-map-mobile@1x.webp 1x, ../../img/bg-map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1300px)" srcset="../../img/bg-map-desktop@1x.png 1x, ../../img/bg-map-desktop@1x.png 2x">
+            <source media="(min-width: 768px)" srcset="../../img/bg-map-tablet@1x.png 1x, ../../img/bg-map-tablet@1x.png 2x">
+            <img class="page-map__map" src="../../img/bg-map-mobile@1x.png" srcset="../../img/bg-map-mobile@2x.png" alt="Как до нас добраться">
+          </picture>
         </div>
       </section>
       <section class="footer-down">
