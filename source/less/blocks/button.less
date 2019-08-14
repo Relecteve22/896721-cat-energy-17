@@ -10,6 +10,17 @@
   background-color: @color-main;
   border: none;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5eaa2f;
+  }
+
   &--to-all {
     padding: 10px 0;
 
@@ -21,17 +32,17 @@
 
     background-color: @color-block--gray;
     border: none;
-  }
 
-  &:hover {
-    background-color: #5eaa2f;
-  }
+    &:hover {
+      background-color: #ebebeb;
+    }
 
-  &:focus,
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
+    &:focus,
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
 
-    background-color: #5eaa2f;
+      background-color: #ebebeb;
+    }
   }
 }
 
@@ -43,5 +54,13 @@
     font-size: @text-size--medium;
     line-height: @text-height--medium;
     text-align: center;
+
+    &--to-all {
+      padding: 10px 0;
+
+      font-size: 16px;
+      color: @color-description;
+      text-transform: uppercase;
+    }
   }
 }

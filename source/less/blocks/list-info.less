@@ -61,7 +61,7 @@
     outline: none;
   }
 
-  &:active {
+  &:focus {
     border-color: @color-description;
     outline: none;
   }
@@ -81,7 +81,7 @@
   fill: #ff8282;
 }
 
-.list-info__input:active + .list-info__svg {
+.list-info__input:focus + .list-info__svg {
   fill: @color-main;
 }
 
@@ -115,6 +115,14 @@
   position: relative;
 
   display: flex;
+
+  &:hover .list-info__radio-indicator {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .list-info__radio-indicator {
@@ -145,6 +153,14 @@
   position: relative;
 
   display: flex;
+
+  &:hover .list-info__checkbox-indicator {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .list-info__checkbox-indicator {
@@ -269,5 +285,23 @@
   .list-info__svg--phone {
     top: 17px;
     right: 18px;
+  }
+
+  .list-info__input {
+    min-height: 49px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+
+    &--phone {
+      min-height: 52px;
+      padding-left: 14px;
+      padding-top: 10px;
+    }
+
+    &--email {
+      min-height: 52px;
+      padding-top: 10px;
+    }
   }
 }
