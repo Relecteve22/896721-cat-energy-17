@@ -1,5 +1,54 @@
 .info-programm {
   padding: 0;
+  margin: 0;
+  margin-top: 23px;
 
-  border: 0;
+  border: solid 1px #ededed;
+  border-right: 0;
+  border-left: 0;
+}
+
+.info-programm__list {
+  min-height: 155px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .info-programm {
+    padding: 0;
+    margin: 0;
+    margin-top: 72px;
+
+    border-right: solid 1px #ededed;
+    border-left: solid 1px #ededed;
+  }
+
+  .info-programm__list {
+    min-height: 194px;
+    padding: 0 @tablet-padding;
+    padding-top: 23px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-programm {
+    width: 570px;
+    margin-top: 0;
+  }
+
+  .info-programm__list {
+    justify-content: normal;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .info-programm__list .list-info__item {
+    margin-top: 13px;
+  }
+
+  .info-programm__list .list-info__item:first-of-type {
+    margin-top: 0;
+  }
 }

@@ -10,18 +10,6 @@
   background-color: @color-main;
   border: none;
 
-  &--to-all {
-    padding: 10px 0;
-
-    font-size: 16px;
-    line-height: @text-height--medium;
-    color: @color-description;
-    text-transform: uppercase;
-
-    background-color: @color-block--gray;
-    border: none;
-  }
-
   &:hover {
     background-color: #5eaa2f;
   }
@@ -31,6 +19,30 @@
     color: rgba(255, 255, 255, 0.3);
 
     background-color: #5eaa2f;
+  }
+
+  &--to-all {
+    padding: 10px 0;
+
+    font-size: 16px;
+    line-height: @text-height--medium;
+    color: @color-description;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: @color-block--gray;
+    border: none;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:focus,
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+
+      background-color: #ebebeb;
+    }
   }
 }
 
@@ -42,5 +54,13 @@
     font-size: @text-size--medium;
     line-height: @text-height--medium;
     text-align: center;
+
+    &--to-all {
+      padding: 10px 0;
+
+      font-size: 16px;
+      color: @color-description;
+      text-transform: uppercase;
+    }
   }
 }

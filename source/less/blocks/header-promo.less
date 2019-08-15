@@ -10,7 +10,7 @@
 
 .header-promo__title {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 27px;
 
   text-align: center;
   font-size: @text-size--big;
@@ -21,8 +21,8 @@
 
 .header-promo__slogan {
   margin: 0;
-  margin-top: 26px;
-  margin-bottom: 29px;
+  margin-top: 25px;
+  margin-bottom: 27px;
 
   text-align: center;
   font-size: @text-size--small;
@@ -34,6 +34,10 @@
 
 .header-promo__pick-program {
   margin-top: 1px;
+}
+
+.header-promo picture {
+  margin: 0 auto;
 }
 
 .header-promo__item-img {
@@ -89,6 +93,11 @@
     margin-left: 88px;
     margin-top: 29px;
   }
+
+  .header-promo picture {
+    order: 1;
+    height: 528px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -127,5 +136,9 @@
     width: 552px;
     height: 499px;
     margin: 0;
+  }
+
+  .header-promo picture {
+    height: auto;
   }
 }

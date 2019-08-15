@@ -1,15 +1,64 @@
 .page-map {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  z-index: -1;
+
+  width: 320px;
+  margin: 0 auto;
+  margin-top: -38px;
+  // width: 280px;
+  min-height: 362px;
+  // margin: 0 auto;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 146px;
+    left: 132px;
+
+    width: 55px;
+    height: 53px;
+
+    background-image: url("../../img/map-pin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .page-map__map {
-  width: 100%;
-  height: 362px;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
+  .page-map {
+    width: 768px;
+    min-height: 400px;
+
+    margin-top: -6px;
+
+    &::after {
+      top: 151px;
+      left: 327px;
+
+      width: 113px;
+      height: 106px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-map {
+    width: 1300px;
+    padding-top: 7px;
+
+    &::after {
+      top: 160px;
+      left: auto;
+      right: 326px;
+    }
+  }
+
   .page-map__map {
-    height: 400px;
+    min-height: 400px;
   }
 }

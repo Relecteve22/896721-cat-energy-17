@@ -21,23 +21,28 @@
     content: "";
 
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 0;
 
     width: 60px;
     height: 60px;
 
+    background-color: @color-main;
     background-image: url("../../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: @color-main;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/advantage-leaf@2x.png");
+      background-size: 84%;
+    }
   }
 
   &--release::after {
     content: "";
 
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 0;
 
     width: 60px;
@@ -47,13 +52,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: @color-main;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/advantage-powder@2x.png");
+      background-size: 82%;
+    }
   }
 
   &--use::after {
     content: "";
 
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 0;
 
     width: 60px;
@@ -63,13 +73,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: @color-main;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/advantage-dining@2x.png");
+      background-size: 84%;
+    }
   }
 
   &--changes::after {
     content: "";
 
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 0;
 
     width: 60px;
@@ -79,6 +94,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: @color-main;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/advantage-clock@2x.png");
+      background-size: 84%;
+    }
   }
 }
 
@@ -96,7 +116,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-right: 70px;
-    margin-top: 70px;
+    margin-top: 72px;
 
     counter-reset: section;
   }
@@ -108,21 +128,37 @@
     &--function::after {
       width: 80px;
       height: 80px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-size: 64%;
+      }
     }
 
     &--release::after {
       width: 80px;
       height: 80px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-size: 62%;
+      }
     }
 
     &--use::after {
       width: 80px;
       height: 80px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-size: 60%;
+      }
     }
 
     &--changes::after {
       width: 80px;
       height: 80px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-size: 63%;
+      }
     }
 
     &::before {

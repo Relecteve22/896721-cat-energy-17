@@ -1,34 +1,299 @@
 .list-info {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 @mobile-padding;
   margin: 0;
 
   list-style: none;
 }
 
+.list-info__label {
+  position: relative;
+
+  display: flex;
+}
+
+.list-info__svg {
+  position: absolute;
+
+  &--email {
+    top: 16px;
+    right: 15px;
+
+    width: 18px;
+    height: 14px;
+  }
+
+  &--phone {
+    top: 12px;
+    right: 13px;
+
+    width: 21px;
+    height: 21px;
+  }
+}
+
 .list-info__text {
+  margin-right: 14px;
+
+  align-self: center;
+
   font-size: 16px;
   color: #222222;
   text-transform: uppercase;
 }
 
 .list-info__input {
-  padding: 0;
+  position: relative;
+
+  flex-grow: 1;
+  padding: 13px;
+
+  font-size: 16px;
+  line-height: @text-height--small;
+  color: @color-description;
+
+  border: solid 1px #cdcdcd;
+
+  &:invalid {
+    border-color: #ff8282;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: @color-description;
+    outline: none;
+  }
+
+  &--email {
+    padding: 13px 14px;
+    padding-right: 38px;
+  }
+
+  &--phone {
+    padding: 13px 14px;
+    padding-right: 38px;
+  }
+}
+
+.list-info__input:invalid + .list-info__svg {
+  fill: #ff8282;
+}
+
+.list-info__input:focus + .list-info__svg {
+  fill: @color-main;
 }
 
 .list-info__input::placeholder {
   text-transform: uppercase;
-  color: @color-description;
 }
 
 .list-info__type-programm {
+  padding-left: 16px;
+  padding-top: 6px;
+
   font-size: 16px;
   color: #222222;
   text-transform: uppercase;
 }
 
 .list-info__additional-item {
+  padding-left: 16px;
+  padding-top: 5px;
+
   font-size: 16px;
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
+}
+
+.list-info__login-radio {
+  position: relative;
+
+  display: flex;
+
+  &:hover .list-info__radio-indicator {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.list-info__radio-indicator {
+  position: relative;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: solid 1px #cdcdcd;
+}
+
+.list-info__radio-button:checked + .list-info__radio-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: @color-main;
+  border-radius: 50%;
+}
+
+.list-info__login-checkbox {
+  position: relative;
+
+  display: flex;
+
+  &:hover .list-info__checkbox-indicator {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.list-info__checkbox-indicator {
+  position: relative;
+
+  width: 30px;
+  height: 30px;
+
+  border: solid 1px #cdcdcd;
+}
+
+.list-info__checkbox-button:checked + .list-info__checkbox-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  width: 22px;
+  height: 17px;
+
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .list-info__text {
+    padding-left: 3px;
+    margin-right: 18px;
+
+    font-size: @text-size--medium;
+    line-height: @text-height--medium;
+  }
+
+  .list-info__input {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: @text-size--medium;
+    line-height: @text-height--medium;
+
+    &--email {
+      padding-right: 52px;
+    }
+
+    &--phone {
+      padding-right: 52px;
+    }
+  }
+  
+  .list-info__radio-indicator {
+    width: 40px;
+    height: 40px;
+  }
+
+  .list-info__radio-button:checked + .list-info__radio-indicator::after {
+    top: 10px;
+    left: 10px;
+
+    width: 18px;
+    height: 18px;
+  }
+
+  .list-info__type-programm {
+    padding-left: 19px;
+    padding-top: 9px;
+
+    font-size: @text-size--medium;
+    line-height: @text-height--medium;
+  }
+
+  .list-info__label {
+    &--email::after {
+      top: 19px;
+      right: 19px;
+    }
+
+    &--phone::after {
+      top: 16px;
+      right: 16px;
+    }
+  }
+
+  .list-info__checkbox-indicator {
+    width: 40px;
+    height: 40px;
+  }
+
+  .list-info__checkbox-button:checked + .list-info__checkbox-indicator::after {
+    top: 10px;
+    left: 10px;
+
+    width: 21px;
+    height: 16px;
+  }
+
+  .list-info__additional-item {
+    padding-left: 18px;
+    padding-top: 9px;
+
+    font-size: @text-size--medium;
+    line-height: @text-height--medium;
+  }
+
+  .additional__list .list-info__item {
+    width: 284px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .list-info__svg--email {
+    top: 21px;
+    right: 22px;
+  }
+
+  .list-info__svg--phone {
+    top: 17px;
+    right: 18px;
+  }
+
+  .list-info__input {
+    min-height: 49px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+
+    &--phone {
+      min-height: 52px;
+      padding-left: 14px;
+      padding-top: 10px;
+    }
+
+    &--email {
+      min-height: 52px;
+      padding-top: 10px;
+    }
+  }
 }
