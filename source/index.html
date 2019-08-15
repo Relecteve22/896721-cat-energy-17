@@ -188,27 +188,31 @@
     </main>
     <footer class="page-footer">
       <section class="about-us">
-        <div class="about-us__cooperation page-cooperation">
-          <h2 class="page-cooperation__title">
-            приглашаем
-            к сотрудничеству
-            дилеров!
-          </h2>
-          <address class="page-cooperation__address">
-            ул. Большая Конюшенная, д. 19/8
-            <span class="page-cooperation__address-city">Санкт-Петербург</span>
-          </address>
+        <div class="about-us__container">
+          <div class="about-us__cooperation page-cooperation page-cooperation--bg">
+            <h2 class="page-cooperation__title">
+              приглашаем
+              к сотрудничеству
+              дилеров!
+            </h2>
+            <address class="page-cooperation__address">
+              ул. Большая Конюшенная, д. 19/8
+              <span class="page-cooperation__address-city">Санкт-Петербург</span>
+            </address>
+          </div>
+          <div class="about-us__map page-map">
+            <picture class="page-map__picture">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="../../img/bg-map-desktop@1x.webp 1x, ../../img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="../../img/bg-map-tablet@1x.webp 1x, ../../img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="../../img/bg-map-mobile@1x.webp 1x, ../../img/bg-map-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="../../img/bg-map-desktop@1x.png 1x, ../../img/bg-map-desktop@1x.png 2x">
+              <source media="(min-width: 768px)" srcset="../../img/bg-map-tablet@1x.png 1x, ../../img/bg-map-tablet@1x.png 2x">
+              <img class="page-map__map" src="../../img/bg-map-mobile@1x.png" srcset="../../img/bg-map-mobile@2x.png" alt="Как до нас добраться">
+            </picture>
+          </div>
         </div>
-        <div class="about-us__map page-map">
-          <picture>
-          <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="../../img/bg-map-desktop@1x.webp 1x, ../../img/bg-map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="../../img/bg-map-tablet@1x.webp 1x, ../../img/bg-map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="../../img/bg-map-mobile@1x.webp 1x, ../../img/bg-map-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="../../img/bg-map-desktop@1x.png 1x, ../../img/bg-map-desktop@1x.png 2x">
-            <source media="(min-width: 768px)" srcset="../../img/bg-map-tablet@1x.png 1x, ../../img/bg-map-tablet@1x.png 2x">
-            <img class="page-map__map" src="../../img/bg-map-mobile@1x.png" srcset="../../img/bg-map-mobile@2x.png" alt="Как до нас добраться">
-          </picture> -->
-        </div>
+        <iframe class="about-us__iframe-map" src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD"></iframe>
       </section>
       <section class="footer-down">
         <div class="footer-down__container">
