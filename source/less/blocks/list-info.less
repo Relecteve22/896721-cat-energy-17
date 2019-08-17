@@ -54,16 +54,24 @@
   line-height: @text-height--small;
   color: @color-description;
 
-  border: solid 1px #cdcdcd;
+  border: solid 1px #e6e6e6;
 
   &:invalid {
     border-color: #ff8282;
     outline: none;
   }
 
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
   &:focus {
     border-color: @color-description;
     outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 
   &--email {
@@ -79,6 +87,10 @@
 
 .list-info__input:invalid + .list-info__svg {
   fill: #ff8282;
+}
+
+.list-info__input:hover + .list-info__svg {
+  fill: #222222;
 }
 
 .list-info__input:focus + .list-info__svg {
@@ -146,6 +158,10 @@
   border-radius: 50%;
 }
 
+.list-info__radio-button:focus + .list-info__radio-indicator {
+  outline: 1px red solid;
+}
+
 .list-info__login-checkbox {
   position: relative;
 
@@ -183,6 +199,10 @@
   background-repeat: no-repeat;
 }
 
+.list-info__checkbox-button:focus + .list-info__checkbox-indicator {
+  outline: 1px red solid;
+}
+
 @media (min-width: @tablet-width) {
   .list-info__text {
     padding-left: 3px;
@@ -206,9 +226,10 @@
 
     &--phone {
       padding-right: 52px;
+      padding-left: 14px;
     }
   }
-  
+
   .list-info__radio-indicator {
     width: 40px;
     height: 40px;
@@ -265,6 +286,16 @@
 
   .additional__list .list-info__item {
     width: 284px;
+  }
+
+  .list-info__svg--phone {
+    top: 16px;
+    right: 17px;
+  }
+
+  .list-info__svg--email {
+    top: 19px;
+    right: 19px;
   }
 }
 

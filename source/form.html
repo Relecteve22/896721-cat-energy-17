@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style-min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <title>HTML Academy: Кэт энерджи</title>
@@ -113,7 +113,7 @@
                 <li class="list-info__item">
                   <label class="list-info__label list-info__label--phone">
                     <span class="list-info__text">Телефон:*</span>
-                    <input class="list-info__input list-info__input--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
+                    <input class="list-info__input list-info__input--phone" type="phone" name="phone" placeholder="8 (960) 900-60-90" required>
                     <svg class="list-info__svg list-info__svg--phone" width="21"  height="21">
                       <use xlink:href="img/sprite.svg#icon-phone"></use>
                     </svg>
@@ -125,7 +125,7 @@
           <div class="form__container">
             <fieldset class="form__fieldset comment">
               <legend class="form__legend comment__title">Комментарий</legend>
-              <textarea class="comment__description" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="comment__description" name="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
           </div>
           <div class="form__container">
@@ -178,7 +178,7 @@
           <div class="about-us__cooperation page-cooperation page-cooperation--bg">
             <h2 class="page-cooperation__title">
               приглашаем
-              к сотрудничеству
+              к&nbsp;сотрудничеству
               дилеров!
             </h2>
             <address class="page-cooperation__address">
